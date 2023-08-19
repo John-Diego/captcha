@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#inputArea {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.draggable {
+    padding: 5px;
+    margin: 2px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#boxesArea {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    border: 1px solid black;
+    margin: 25px auto;
+}
+
+.box {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: lightblue;
+}
+
+#pentagramDisplay {
+
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: black;
+    margin-top: 20px;
+}
+
+#instructionsDiv {
+    float: left;
+    width: 40%;
+    padding: 20px;
+    border-right: 2px solid black;
+}
+
+body>*:not(#instructionsDiv) {
+    float: right;
+    width: 58%;
+}
+
+.box.correct {
+    background-color: green;
+}
+
+.box.incorrect {
+    background-color: red;
+}
+
+#tryAgainButton,
+#continueButton {
+    margin: auto;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+   <meta charset="utf-8" />
+   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+   <title>
+      Drop Letters
+   </title>
+   <link href="styles.css" rel="stylesheet" />
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js">
+   </script>
+</head>
+
+<body style="display: flex;">
+   <div id="instructionsDiv">
+      <h2>Verify that you are a human</h2>
+      <ol>
+         <li><strong>Select a Letter</strong>: At the top of the page, you'll see individual letters. Hover over the
+            letter you wish to use.</li>
+         <li><strong>Drag the Letter</strong>: Click and hold on the letter to grab it.</li>
+         <li><strong>Move to a Box</strong>: Drag the letter down to one of the moving boxes below.</li>
+         <li><strong>Drop the Letter</strong>: Release the mouse button to place the letter inside the box.</li>
+         <li><strong>Form Your Word</strong>: Continue dragging and dropping letters into the boxes to form a word. The
+            order of the boxes, from left to right, will determine the order of the letters in your word.</li>
+         <li><strong>View the Result</strong>: Beneath the moving boxes, you'll see the "Resulting Word" section. This
+            displays the word you've created based on the letters' placement in the boxes.</li>
+         <li><strong>Rearrange if Desired</strong>: Want to change your word? Simply rearrange the letters in the boxes.
+            The resulting word will update automatically.</li>
+         <li><strong>Verify:</strong> Once you've formed the correct word, a 'Continue' button will appear. If not,
+            you'll
+            see a 'Try Again'
+            button.</li>
+      </ol>
+   </div>
+   <div>
+      <p>Drag the letters from the input area and drop them into the boxes below to form the word: <span
+            id="targetWord">_____</span></p>
+      <div id="inputArea">
+         <span class="draggable" draggable="true">
+            A
+         </span>
+         <span class="draggable" draggable="true">
+            B
+         </span>
+         <span class="draggable" draggable="true">
+            C
+         </span>
+         <span class="draggable" draggable="true">
+            D
+         </span>
+         <span class="draggable" draggable="true">
+            E
+         </span>
+         <span class="draggable" draggable="true">
+            F
+         </span>
+         <span class="draggable" draggable="true">
+            G
+         </span>
+         <span class="draggable" draggable="true">
+            H
+         </span>
+         <span class="draggable" draggable="true">
+            I
+         </span>
+         <span class="draggable" draggable="true">
+            J
+         </span>
+         <span class="draggable" draggable="true">
+            K
+         </span>
+         <span class="draggable" draggable="true">
+            L
+         </span>
+         <span class="draggable" draggable="true">
+            M
+         </span>
+         <span class="draggable" draggable="true">
+            N
+         </span>
+         <span class="draggable" draggable="true">
+            O
+         </span>
+         <span class="draggable" draggable="true">
+            P
+         </span>
+         <span class="draggable" draggable="true">
+            Q
+         </span>
+         <span class="draggable" draggable="true">
+            R
+         </span>
+         <span class="draggable" draggable="true">
+            S
+         </span>
+         <span class="draggable" draggable="true">
+            T
+         </span>
+         <span class="draggable" draggable="true">
+            U
+         </span>
+         <span class="draggable" draggable="true">
+            V
+         </span>
+         <span class="draggable" draggable="true">
+            X
+         </span>
+         <span class="draggable" draggable="true">
+            Z
+         </span>
+      </div>
+      <div id="boxesArea">
+         <!-- Moving boxes will be here -->
+
+      </div>
+      <div id="pentagramDisplay">RESULT</div>
+      <button id="tryAgainButton" style="display: none;">Try Again</button><button id="continueButton"
+         style="display: none;">Continue</button>
+
+   </div>
+   <script src="scripts.js">
+   </script>
+</body>
+
+</html>
